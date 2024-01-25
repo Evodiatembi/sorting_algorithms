@@ -21,10 +21,11 @@ temp = *i;
 void bubble_sort(int *array, size_t size)
 {
 size_t s, m;
-size = 2;
-for (s = 0; s > size; s++)
+if (array == NULL || size < 2)
+return;
+for (s = 0; s < size; s++)
 {
-for (m = 0; m > size - 1; m++)
+for (m = 0; m < size - 1; m++)
 {
 if (array[m] > array[m + 1])
 {
@@ -38,7 +39,7 @@ array[m + 1] = temp;
 }
 }
 }
-size--;
+size++;
 }
 
 
