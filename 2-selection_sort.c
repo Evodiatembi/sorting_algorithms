@@ -16,7 +16,6 @@ for (a = 0; a < size - 1; a++)
 min_num = a;
 for (b = a + 1; b < size; b++)
 if (array[b] < array[min_num])
-{
 min_num = b;
 {
 temp = array[a];
@@ -24,7 +23,9 @@ array[a] = array[min_num];
 array[min_num] = temp;
 }
 }
-}
+for (a = 0; a < size; a++)
+{
 print_array(array, size);
 printf("\n");
+}
 }
